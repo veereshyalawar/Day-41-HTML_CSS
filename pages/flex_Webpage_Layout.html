@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <link rel="shortcut icon" href="..\assets\BL_logo_square_png.png">
+        <title>CodePen - Demo Flexbox 3</title> 
+        <style>
+            * {
+              box-sizing: border-box; 
+            }
+            body {
+              display: flex;
+              min-height: 100vh;
+              flex-direction: row;
+              margin: 0;
+            }
+            .col-1 {
+              background: #D7E8D4;
+              flex: 1;
+            }
+            .col-2 {
+              display: flex;
+              flex-direction: column;
+              flex: 5;
+            }
+            .content {
+              display: flex;
+              flex-direction: row;
+            }
+            .content > article {
+              flex: 4;
+              min-height: 60vh;
+            }
+            header, footer {
+              background: yellowgreen;
+              height: 20vh;
+            }
+            header, footer, article, nav {
+              padding: 1em;
+            }
+          </style>
+    </head>
+    <body>
+        <nav class="col-1"><p>Navigation</p>
+            <p><a href ="#">Home</a></p>
+            <p><a href ="#">About</a></p>
+        </nav>
+        <div class="col-2">
+            <header><h1>DETAILED STUDY</h1></header>
+            <main class="content">
+                <article><h2>Are Mumbai Indians the most dominant team in IPL history?</h2>
+                    <p>Mumbai Indians may have overtaken Chennai Super Kings on the IPL trophy count last season itself, 
+                        but given that CSK were barred from playing for two years, it is only this year that the baton of 
+                        the most dominant team in IPL has truly passed on to Rohit Sharma's men. Mumbai Indians' third trophy 
+                        in four years has coincided with the ageing team of CSK failing for the first time in the tournament's 
+                        history to finish in the top four. But the 2020 campaign and the dominance in the last four years, begs 
+                        one question - has there been a more dominant team in IPL's history?</p><br>
+                    <p>To understand that, we first take a look at how far ahead MI were in comparison to the second-best 
+                        team in the competition and the tournament averages. While Sunrisers Hyderabad ended marginally better 
+                        in some bowing parameters than MI in 2020, the champions were significantly ahead of the pack in terms 
+                        of scoring runs. Mumbai's pace battery picked 28 wickets in Powerplay at an average of 19.82 and a wicket 
+                        every 16.9 balls and they were the only team to concede under nine in the death overs.</p>
+                </article>
+            </main>
+            <footer>© Cricbuzz</footer>
+        </div>
+    </body>
+</html> 
